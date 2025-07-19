@@ -2,6 +2,7 @@ import { registerUser } from '../use-cases/register-user.usecase.js';
 import { loginUser } from '../use-cases/login-user.usecase.js';
 import { listUsers } from '../use-cases/list-users.usecase.js';
 import { deleteUserProfile } from '../use-cases/delete-user.usecase.js';
+import { updateUserProfile } from '../use-cases/update-user.usecase.js';
 
 
 export async function handleUserRegistration(req, res) {
@@ -39,7 +40,6 @@ export async function handleListUsers(req, res) {
     }
 }
 
-import { updateUserProfile } from '../use-cases/update-user.usecase.js';
 
 export async function handleUpdateUser(req, res) {
     try {
